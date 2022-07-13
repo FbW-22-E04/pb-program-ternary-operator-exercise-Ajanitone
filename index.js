@@ -10,14 +10,17 @@ if (a + b < 4) {
 } */
 
 /* _________________________________ */
-let a=3;
-let b=6;
+let a = 3;
+let b = 6;
+let result = a + b < 4 ? "Below" : "Over";
 
-//write your code here 
-console.log(result)
+//write your code here
+console.log("01:", result);
 
+console.log(
+  "----------------------------------------------------------------------------------------------------------"
+);
 /* _________________________________ */
-
 
 //Rewrite the code below to use the ternary operator (?:) (you should be able to condense the if-else logic into one line).
 /* if (score > 1337)
@@ -32,14 +35,20 @@ else
 /* _________________________________ */
 
 let score = 42;
-let msg = "";
+let msg =
+  score > 1337
+    ? "This is a new highscore!"
+    : "You need more points to beat the highscore!";
 
-//write your code here 
+//write your code here
 
-console.log(msg)
+console.log("02:", msg);
+
+console.log(
+  "----------------------------------------------------------------------------------------------------------"
+);
 
 /* _________________________________ */
-
 
 // Rewrite if..else using multiple ternary operators '?'.
 //For readability, it’s recommended to split the code into multiple lines.
@@ -58,9 +67,21 @@ if (login == 'Employee') {
 
 /* _________________________________ */
 
+//write your code here
 
-//write your code here 
-console.log(message)
+const login = "";
+
+const loginA = "Employee";
+const loginB = "Director";
+
+const loginC =
+  loginA == "Employee"
+    ? "Hello"
+    : "No login" || loginB == "Director"
+    ? "Greetings"
+    : "No loginin" || login == ""
+    ? "No login"
+    : "Do nothing";
+console.log("03:", loginC);
 
 /* _________________________________ */
-
